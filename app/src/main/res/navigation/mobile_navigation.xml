@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.radioacoustick.android_bottom_navigation_with_tablayout_with_navigation_drawer.TabHolderHomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home_tab_holder" />
+
+    <fragment
+        android:id="@+id/nav_dashboard"
+        android:name="com.radioacoustick.android_bottom_navigation_with_tablayout_with_navigation_drawer.ui.DashboardFragment"
+        android:label="DashboardFragment"
+        tools:layout="@layout/fragment_dashboard"/>
+
+    <fragment
+        android:id="@+id/nav_notifications"
+        android:name="com.radioacoustick.android_bottom_navigation_with_tablayout_with_navigation_drawer.ui.NotificationsFragment"
+        android:label="NotificationsFragment"
+        tools:layout="@layout/fragment_notifications"/>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.radioacoustick.android_bottom_navigation_with_tablayout_with_navigation_drawer.ui.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.radioacoustick.android_bottom_navigation_with_tablayout_with_navigation_drawer.ui.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+
+</navigation>
